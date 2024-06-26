@@ -1,0 +1,351 @@
+<html>
+
+<head>
+   
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Store - Healthy Seeds Healthy Plants</title>
+    <link rel="icon" href="naturestore_logo.png" type="image/png">
+
+</head>
+
+<body>
+    <div class="title">
+        
+        <div class="title2">
+            <h1>
+                Nature Store
+            </h1>
+            <p>Healthy Seeds Healthy Plants</p>
+
+        </div>
+        <div class="title1">
+
+            <img src="location.png">
+            <div>
+                <h3>
+                    &nbsp;Gudivada
+                </h3>
+                <p>
+                    srirampuram,Krishna dist,521301
+                </p>
+
+            </div>
+
+        </div>
+        <div class="title1">
+
+            <img src="phone-call.png">
+            <div>
+                <h3>
+                    +91 7702837610
+                </h3>
+                <p>
+                    24/7 Support
+                </p>
+
+            </div>
+
+        </div>
+        <div class="title1">
+
+            <img src="whatsapp.png">
+            <div>
+                <h3>
+                    +91 7702837610
+                </h3>
+                <p>
+                    24/7 Support
+                </p>
+
+            </div>
+
+        </div>
+        <div class="title1">
+
+            <img src="clock.png">
+            <div>
+                <h3>
+                    Mon-fri 9:00-18:30
+                </h3>
+                <p>
+                    Online store Always Open
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+  
+ <!-------------------------------------------------------------------------------------------------------->
+    <div id="login" class="three">
+        <div class="button2">
+            <div id="button-colour"></div>
+            <button onclick="log1()" class="button3">Login</button>
+            <button onclick="reg1()" class="button3">Register</button>
+        </div>
+        <form class="form1" id="login-form" action="main.htm" target="_self">
+            <input id="log_user" type="text" placeholder="User name" required>
+            <span id="log_name_error" class="error">*wrong username</span>
+            <span id="error_empty_name" class="error">Username cannot be empty</span>
+            <input id="log_pass" type="password" placeholder="Password" required>
+            <span id="log_pass_error" class="error">*wrong password</span>
+            <br><br>
+            <a href="#" id="forget" style="font-size:15px;">Forget Password</a>
+            <br><br>
+            <button type="button" onclick="login()">Submit</button> <!-- Changed to type="button" -->
+        </form>
+        <form class="form2" id="reg-form">
+            <input id="reg_name" type="text" placeholder="User name" required>
+           
+
+            <span id="error_name" class="error">User name already taken</span>
+            <input id="reg_pass" type="password" placeholder="Password" required>
+            <input id="reg_re_pass" type="password" placeholder="Retype Password" required>
+            <span id="error_pass" class="error">Passwords do not match</span>
+            
+            <br><br>
+            <button type="button" onclick="reg_submit()">Submit</button> <!-- Changed to type="button" -->
+        </form>
+    </div>
+    <div id="messagelog" class="message">
+        <div class="message1">
+            <img src="sprout.gif">
+            <p>Successfully logged in</p> <!-- Corrected message -->
+        </div>
+        <p class="message2">
+            Thanks for visiting
+        </p>
+    </div>
+
+
+    <script>
+       
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------->
+    <div id="menu1" class="menu">
+        <div class="menu2">
+
+            <p onclick="seed1()" class="menu2-p1" id="seed1">Seeds</p>
+            <p onclick="indoor('Grow_Bags')">Grow Bags</p>
+            <p onclick="indoor('Live_Plants')">Live Plants</p>
+            <p onclick="indoor('Organic')">Organic Bio Fertilizer</p>
+
+        </div>
+        <div id="icon" class="menu2-icons">
+            <img id="username_profile" onclick="openloginwindow()" src="profile.gif" alt=""><p id="username_log"class="userprofile_circle"></p><p id="username_name" class="userprofile_name"></p><img id="cart_log15" class="cart_log1" onclick="opencart()" src="market.png" alt=""><img class="search"src="loupe.png" alt=""><img onclick="logout()" id="logout_img" class="logout_img" src="logout.gif">
+        </div>
+
+    </div>
+    <!------------------------------------------- here this menu for phone ----------------------------------------------------------->
+     
+    <img onclick="expandBox()" src="hamburger.png" class="menu-img">
+    
+    
+    <div class="menushow">
+    <div class="menushow1">
+        <p onclick="seed1()" class="menu2-p1" id="seed1">Seeds</p>
+        <p onclick="indoor('Grow_Bags')">Grow Bags</p>
+        <p onclick="indoor('Live_Plants')">Live Plants</p>
+        <p onclick="indoor('Organic')">Organic Bio Fertilizer</p>
+    </div>
+    
+    </div>
+    <script>
+        function expandBox() {
+            var box = document.querySelector('.menushow');//with the help of class name we take the element
+            box.classList.toggle('expanded');
+        
+            var screen1 = screen.width;
+
+            if (screen1 <= 412) {
+                console.log("hello");
+            } else {
+                console.log("ooo");
+            }
+        }
+    </script>
+
+   
+    <div id="one" class="seed">
+        <p id="indoor_plant" onclick="indoor('indoor_plant')">
+            Indoor Seeds
+        </p>
+        <hr>
+        <p id="Outdoor_plants" onclick="indoor('Outdoor_plants')">
+            Outdoor Seeds
+        </p>
+
+
+    </div>
+<script src="login.js">
+
+</script>
+<script src="main1.js"></script>
+    <!------------------------------- main tree circle image ------------------------------------------------------->
+    <img id="main-image" class="main-img"
+        src="naturestore_logo.png">
+
+
+    <!-- here its main window the elements are add to indoor div means by click indoor all plants are view-->
+    <div id="Indoor-seeds" class="Indoor">
+
+    </div>
+    <!------------------------------here  we add all the cart items to div----------------------------------------------------------------------------->
+    <div id="cart" class="cart1">
+        <img class="cart1_cross" onclick="close1()" src="cross.png">
+
+    </div>
+    <!---  --------------------------------  message id = message           -->
+    <div id="message" class="message">
+        <div class="message1">
+        <img src="sprout.gif"><p>ADDED TO CART</p>
+        </div>
+        <p class="message2">
+            Thnks for visting
+        </p>
+
+    </div>
+    <div id="login_check" class="message">
+        <div class="message1">
+            <img src="sprout.gif">
+            <p>Please log in</p>
+        </div>
+        <p class="message250">
+            Then items are add to cart
+        </p>
+    
+    </div>
+
+ <!------------------------------- it show the single image when we click on plant name                  ------------------------------>
+    <div class="add_to_cart" id="ADD1">
+
+
+        <div class="fullview-img">
+            <img id="fullview-img" class="fullview-img5">
+
+        </div>
+        <div class="plant_name_add">
+            <p id="fullview-plantName">
+
+            </p>
+            <p id="fullview-plantCost">
+
+            </p>
+
+        </div>
+        <div class="fullview-in">
+            <button onclick="sub()" class="one">-</i></button>
+            <p id="increase">1</p>
+            <button onclick="add()" class="two">+</i></button>
+        </div>
+        <button onclick="cart(),add_to_cart()" class="fullview-button" id="add-button">
+            ADD TO CART
+        </button>
+    </div>
+    <br>
+    <br>
+
+    <div class="bottom_div">
+        <div class="bottom_div1">
+            <div class="bottom_mess1">
+                <h1>
+                    Nature Store
+                </h1>
+                <p>Healthy Seeds Healthy Plants</p>
+            
+            </div>
+            <div class="bottom_mess2">
+            
+                <img src="whatsapp.png">
+                <div>
+                    <h3>
+                        +91 7702837610
+                    </h3>
+                    <p>
+                        24/7 Support
+                    </p>
+            
+                </div>
+            
+            </div>
+        </div>
+        <div class="bottom_div2">
+            <p><img src="love-unscreen.gif" alt="">Thanks for visiting </p>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div id="bottom_phone1" class="bottom_phone">
+        <div class="title_phone">
+            <h1>Nature Store</h1>
+            <p>Healthy Seeds Healthy Plants</p>
+        </div>
+        <div class="title1_phone">
+            <img src="location.png" alt="Location">
+            <div>
+                <h3>Gudivada</h3>
+                <p>srirampuram, Krishna dist, 521301</p>
+            </div>
+        </div>
+        <div class="title1_phone">
+            <img src="phone-call.png" alt="Phone Call">
+            <div>
+                <h3>+91 7702837610</h3>
+                <p>24/7 Support</p>
+            </div>
+        </div>
+        <div class="title1_phone">
+            <img src="whatsapp.png" alt="WhatsApp">
+            <div>
+                <h3>+91 7702837610</h3>
+                <p>24/7 Support</p>
+            </div>
+        </div>
+        <div class="title1_phone">
+            <img src="clock.png" alt="Clock">
+            <div>
+                <h3>Mon-Fri 9:00-18:30</h3>
+                <p>Online store Always Open</p>
+            </div>
+        </div>
+    </div>
+    <div id="thanks_1" class="thanks">
+        <img class="thanks1" src="pride-unscreen.gif" alt="Pride">
+        <span>Thanks For your Love</span>
+        <img class="thanks2" src="heart-unscreen.gif" alt="Heart">
+        <p>
+            <img  class="thanks3" src="loveu3000-unscreen.gif" alt="Love You">
+        </p>
+    </div>
+<div class="whatsapp">
+    <img src="whatsapp.png">
+
+</div>
+<br>
+<br>
+<br>
+
+
+
+
+    
+    
+
+</body>
+
+</html>

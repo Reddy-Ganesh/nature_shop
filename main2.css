@@ -1,0 +1,623 @@
+@media only screen and (max-width: 412px){
+   
+    .title {
+            width: 100%;
+            position:absolute;
+            top: 0px;
+            left: 0px;
+            height: 50px;
+            
+           
+            display: flex;
+            padding: 0px;
+           
+
+           
+           
+            background-color: rgb(233, 254, 235);
+           
+        }
+    
+        .title1 {
+        
+            
+            display: none;
+           
+    
+
+        }
+                .title2 {
+                    position: relative;
+                    width: fit-content;
+                    height: fit-content;
+                    top:0px;
+                    display: inline-flex;
+                   
+                }
+        
+                .title2 p,
+                h1 {
+                    
+                    margin: 0px;
+                    top: -5px;
+
+        
+                }
+        
+                .title2 p {
+                    position: relative;
+                    left: 50px
+                }
+                .title2 h1{
+                    position: relative;
+                    left: -50px;
+                    
+                    font-size:larger
+                }
+                .main-img{
+                    display: none;
+                }
+        .menu {
+       
+            width: max-content;
+            height:max-content;
+            display: inline-flex;
+            
+            position: relative;
+            left: 80%;
+            padding: 2px;
+            border-radius: 35px;
+            top: 70px;
+            z-index: 2;
+            background-color: #ffffff;
+            box-shadow: 0px 2px 6px 0px rgb(123, 159, 110);
+            font-size: medium;
+            
+        }
+           .userprofile_circle {
+               position: relative;
+               
+               top: 0px;
+               left: 0px;
+               margin: 0px;
+               width: 15px;
+               height: 15px;
+               padding: 5px;
+               padding-left: 10px;
+               display: none;
+               font-size: 14px;
+               background-color: rgb(255, 120, 47);
+               color: white;
+               
+             
+              
+           }
+    
+           .userprofile_name {
+               position: relative;
+    
+               top: 0px;
+               margin: 0px;
+               width: 60px;
+               height: 20px;
+               display: none;
+               font-size: 14px;
+               border: 1px solid yellow;
+               border-radius: 16px;
+               justify-items: center;
+               align-items: center;
+               padding-left: 5px;
+               padding-top: 2px;
+    
+    
+    
+    
+    
+    
+           }
+        .menu2{
+            display: none;
+        }
+        .menu2-icons {
+            width:max-content;
+            /*20%*/
+
+            height: 100%;
+            display: inline-flex;
+            justify-content:space-between;
+           
+
+           
+
+        }
+        
+                
+        
+                .menu2-icons img {
+                    margin-left: 5px;
+                    width:30px;
+                    height: 20px;
+        
+                }
+        
+                .cart_log1 {
+                    display: none;
+                }
+        
+
+       
+        
+        
+        .seed {
+            position: absolute;
+            width: 190px;
+            height: 90px;
+            display: none;
+            border-radius: 20px;
+            top: 110px;
+            padding: auto;
+            background-color: white;
+            z-index: 45;
+            left: 170px;
+            box-shadow: 0px 0px 10px 2px rgb(207, 210, 207);
+
+
+
+
+        }
+        
+                .seed p {
+                    height: 25px;
+                    justify-content: space-evenly;
+                    font-size:medium;
+                    padding-top: 10px;
+                    padding-left: 50px;
+                    cursor: pointer;
+                }
+               
+        /*-------------------------------------------login ---------------------------------------*/
+                .three {
+                    position: absolute;
+                    left: 50px;
+                    top: 150px;
+        
+                    width: 80%;
+                    height: 50%;
+        
+                    border-radius: 20px;
+                    backdrop-filter: blur(30px);
+                    overflow: hidden;
+                    z-index: 20;
+                    display: none;
+                    background-color: white;
+                    box-shadow: 0px 2px 2px 2px rgb(113, 111, 111);
+        
+                }
+        
+                .blurred {
+                    filter: blur(50px);
+                    /* Adjust blur level as needed */
+                    pointer-events: none;
+                    /* Prevent interactions with blurred background */
+                }
+        
+        
+        
+        
+                .button2 {
+                    width: 220px;
+                    margin: 35px auto;
+                    position: relative;
+                    border-radius: 30px;
+                    box-shadow: 0 0 20px 9px #ff61241f;
+        
+                }
+        
+                .button3 {
+                    padding: 10px 30px;
+                    cursor: pointer;
+                    border: 0;
+                    background: transparent;
+                    outline: none;
+                    position: relative;
+        
+                }
+        
+                #button-colour {
+                    top: 0;
+                    left: 0;
+                    width: 110px;
+                    position: absolute;
+                    height: 100%;
+                    background-color: lightgreen;
+                    border-radius: 30px;
+                    transition: 0.5s
+                }
+
+
+                        .form1 {
+                            position: absolute;
+                            width: 250px;
+                           
+                            transition: 0.5s;
+                            margin-left: 5px;
+                        }
+        
+                        .form1 {
+                            left: 30px;
+                        }
+        
+        
+        
+                        .form2 {
+                            position: absolute;
+                            width: 280px;
+                            transition: 0.5s;
+                            margin-left: 10px;
+                            transition: 0.5s;
+        
+        
+        
+                        }
+        
+                        .form2 {
+                            left: 450px;
+        
+                        }
+        
+                        .form1 input[type="text"],
+                        .form1 input[type="password"] {
+                            width: 95%;
+                            padding: 10px 0;
+                            margin: 10px 0;
+                            border-left: 0;
+                            border-right: 0;
+                            border-top: 0;
+                            background-color: transparent;
+                            border-bottom: 1px solid orangered;
+                        }
+            
+                           .form2 input[type="text"],
+                           input[type="password"],
+                           input[type="email"] {
+                               width: 80%;
+                               padding: 10px 0;
+                               margin: 10px 0;
+                               border-left: 0;
+                               border-right: 0;
+                               border-top: 0;
+                               background-color: transparent;
+            
+                               border-bottom: 1px solid orangered;
+                           }r
+                .error {
+                    position: relative;
+                    
+                    color: red;
+                    visibility: hidden;
+                    font-size: 12px;
+                }
+                .Indoor {
+                    top:100px;
+                    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                    border: none;
+                    display: grid;
+                }
+            
+                .Indoor1 {
+                    height: 250px;
+                    padding: 0;
+                    margin: 0;
+                }
+                    .plant_name {
+                        width: max-content;
+                        margin-left: 20px;
+                        padding-left: 0;
+                        font-size: 14px;
+                    }
+
+                    .plant_name p {
+                        margin-inline: 2px;
+                    }
+
+                    
+                
+                    .plant-image {
+                        width: 150px;
+                        height: 180px;
+                        left: 10px;
+                        border-radius: 5px;
+                    }
+
+                    .plant-image img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 6px;
+                    }
+
+/*---------------------------------------------when click image-----------------------------------------------------*/
+                .add_to_cart {
+                    position: relative;
+                    
+                    width: 90%;
+                    height: 65%;
+                    left: 5%;
+                    top: 110px;
+                    
+                    
+                }
+
+                .fullview-img5 {
+                   
+                    width: 350px;
+                    height: 350px;
+                    box-shadow: 0px 2px 1px 1px rgb(141, 138, 138);
+                }
+        
+               
+            .fullview-in {
+                position: relative;
+                width: max-content;
+                height: max-content;
+                border-radius: 20px;
+                display: flex;
+                top: 8%;
+                left:35%
+               
+            }
+            .plant_name_add {
+                position: relative;
+                top:0px;
+                width: 350px;
+                font-size: 25px;
+               left:0px
+            }
+        
+                
+        
+                .fullview-button {
+                    position:relative;
+                    width:250px;
+                    height: 40px;
+                   
+                    font-size: larger;
+                    top: 15%;
+                   
+                    left: 15%;
+                   
+                }
+        .menu-img {
+            display: flex;
+            position: relative;
+        
+            top: 40px;
+            width: 25px;
+            height: 25px;
+        }
+                .menushow {
+                    display: inline-flex;
+                    width: 0;
+                    position: absolute;
+                    justify-content: space-between;
+                   
+                    top: 110px;
+                    overflow: hidden;
+                    z-index: 25;
+                    border-radius: 20px;
+                    transition: width 0.5s ease-in-out;
+                    background-color: rgb(236, 247, 236);
+                    
+                }
+        
+                .menushow1 {
+                    display: inline;
+                    position: relative;
+                    margin-inline: 15px;
+                    margin-bottom: 10px;
+                    width: 200px;
+                    font-size: larger;
+                    height: max-content;
+                    
+                }
+        
+                .menushow1 p {
+                    margin-top: 10px;
+                   
+                    opacity: 0;
+                    transition: opacity 0.5s ease-in-out;
+                    
+                }
+                .menushow1 p:hover{
+                    background-color: rgb(72, 74, 71);
+                    
+                    color: white;
+                }
+                .expanded {
+                    width: 200px;
+                    padding: 20px;
+                    box-shadow: 0px 0px 10px 2px rgb(207, 210, 207);
+                }
+        
+                .expanded .menushow1 p {
+                    opacity: 1;
+                }
+        
+                .menu-img {
+                    cursor: pointer;
+                }
+        
+
+                         .message {
+                             width:250px;
+                             height: 70px;
+                             box-shadow: 0px 0px 2px 2px rgb(104, 102, 102);
+                             z-index: 25;
+                             left: 25%;
+                             position: absolute;
+                             top: 50%;
+                             display: none;
+                            font-size:large;
+                             border-radius: 20px;
+                             background-color: white;
+                             align-items: center;
+                             justify-content: center;
+                         }
+            
+                         .message1 {
+                             width: 100%;
+            
+                             display: inline-flex;
+                             align-items: center;
+                             position: relative;
+                             margin-left: 5px;
+            
+            
+                         }
+            
+                         .message1 img {
+                             width: 50px;
+                             height: 50px;
+                         }
+            
+                         .message2 {
+                             position: relative;
+                             margin-left: 75px;
+                         }
+            
+                         .message250 {
+                             position: relative;
+                             margin-left: 20px;
+                         }
+                               
+                                .cart1 {
+                                    width:80%;
+                                    position: absolute;
+                                    left: 10%;
+                                    border-radius: 20px;
+                                    background-color:transparent;
+                                    z-index: 150;
+                                    box-shadow: 0px 2px 0px 2px rgb(193, 191, 191);
+                                    height: 50%;
+                                   top: 40%  ;
+                                    right: 10px;
+                                    display: none;
+                                    grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
+                                    gap: 20px;
+                                    padding: 0px;
+                                    flex-direction: column;
+                                    color: #FFF;
+                                    overflow-x: hidden;
+                                    overflow-y: scroll;
+        
+        
+        
+                                }
+                                .bottom_phone {
+                                    display: grid;
+                                    grid-template-columns: repeat(2, 1fr);
+                                    gap: 20px;
+                                    justify-content: center;
+                                    position: relative;
+                                    top:60px;
+                                    margin-top: 15px;
+                                    margin-bottom: 15px;
+                                    font-size: 15px;
+                                    
+                                }
+
+                                .title_phone {
+                                    grid-column:span 2;/* here it span 2 means it take the two comibined two coloums to one coloumn*/
+                                    text-align: center;
+                                    background-color: #e0f7fa;
+                                    padding: 13px;
+                                    border-radius: 8px;
+                                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                                }
+
+                                .title1_phone {
+                                    display: flex;
+                                    align-items: center;
+                                    background-color: #ffffff;
+                                    border: 1px solid #ccc;
+                                    padding: 10px;
+                                    border-radius: 8px;
+                                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                                }
+
+                                .title1_phone img {
+                                    width: 30px;
+                                    height: 30px;
+                                }
+
+                                .title1_phone h3,
+                                .title1_phone p {
+                                    margin: 0;
+                                }
+
+                                .title1_phone div {
+                                    margin-left: 10px;
+                                }
+                                .bottom_div{
+                                    display: none;
+                                }
+                                .thanks {
+                                    display: grid;
+                                    grid-template-columns: auto 1fr auto;
+                                    gap: 10px;
+                                    border: 2px dashed rgb(252, 252, 252);
+                                    align-items: center;
+                                    background-color: #000000;
+                                      color: white;
+                                    border-radius: 25px;
+                                   margin-top: 25px;
+                                   margin-bottom:25px ;
+                                    box-shadow: 0px 1px 2px 2px rgb(94, 91, 91);
+                                    text-align: center;
+                                    font-size:larger;
+                                    height: 100px;
+                                    position: relative;
+                                    top: 50px;
+                                }
+
+                               
+                                .thanks span {
+                                   padding: 0px;
+                                   border: 0px;
+                                    /* Add some margin around the span to adjust spacing */
+                                }
+
+                                .thanks p {
+                                    grid-column: span 3;
+                                    margin: 0;
+                                    padding-top: 10px;
+                                }
+                                .thanks1{
+                                    position: relative;
+                                    
+                                    width: 55px;
+                                    height: 50px;
+                                    left: 30px;
+                                }
+                            .thanks2{
+                                position: relative;
+                                   
+                                    width: 50px;
+                                    height: 50px;
+                                    right: 30px;
+                                }   
+                                .thanks3{
+                                    position: relative;
+                                    top:-30px;
+                                    width: 50px;
+                                    height: 50px;
+                                }   
+                         .whatsapp {
+                            display: none;
+                         }
+}
+
+
+
+
+    
+
